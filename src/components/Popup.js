@@ -43,7 +43,7 @@ class Counter extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.count}
+        {this.state.count}<br/>
         <button onClick={this.toggleModal}>
           Open the modal
         </button>
@@ -53,7 +53,9 @@ class Counter extends Component {
       </div>
         <Modal show={this.state.isOpen}
           onClose={this.closeModal} counter1={this.state.count}>
-          NumerOfClicks# {this.state.count}
+          NumerOfClicks# <br/>
+          {this.state.count}
+          Close and Re-Click for Count increment
         </Modal>
       </div>
 
